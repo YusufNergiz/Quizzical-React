@@ -1,38 +1,136 @@
-.App {
+.main {
+  position: absolute;
   text-align: center;
+  height: 550px;
+  width: 550px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainPage {
+  background-color: #F5F7FB;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainPageTitle {
+  position: relative;
+  top: 200px;
+  color: #293264;
+  font-family: 'Karla', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mainPageDescription {
+  position: relative;
+  color: #293264;
+  top: 200px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+.mainPageButton {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  top: 210px;
+  color: #F5F7FB;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #4D5B9E;
+  border-radius: 15px;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainPageButton:active {
+  -webkit-box-shadow: inset 0px 0px 5px black;
+     -moz-box-shadow: inset 0px 0px 5px black;
+          box-shadow: inset 0px 0px 5px black;
+   outline: none;
+}
+
+.yellowBlob {
+  position: absolute;
+  float: right;
+  right: 0;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.blueBlob {
+  position: absolute;
+  float: left;
+  left: 0;
+  bottom: 0;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+/* ---------------- */
+
+.questions {
+  background-color: #F5F7FB;
+  min-height: 550px;
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+}
+
+.questions_div {
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+}
+
+.question {
+  color: #293264;
+  font-family: 'Karla', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 10px;
+}
+
+.question_button {
+  height: 20.650205612182617px;
+  width: fit-content;
+  border-radius: 7.942387104034424px;
+  margin: 3px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid #293264;
+  font-family: 'Inter' sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 12px;
+  text-align: center;
+  color: #293264;
+  padding: 2px 15px 2px 15px;
+  cursor: pointer;
+}
+
+.question_button:hover, .question_button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.line {
+  width: 399px;
+  height: 0px;
+  border: 0.794239px solid #DBDEF0;
+  transform: rotate(-0.05deg);
+  border: 0.79px solid #DBDEF0;
+  margin: 0 auto;
+}
+
+.seperate_question {
+  margin: 20px;
 }
